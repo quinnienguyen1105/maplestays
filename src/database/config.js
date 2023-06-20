@@ -8,17 +8,18 @@ import { getFirestore} from "firebase/firestore";
 // Your web app's Firebase configuration
 const firebaseConfig = {
 
-  apiKey: "AIzaSyCjtZIFoyBD_JyYPnHhk9T8LO6X67syRQA",
+  apiKey: "AIzaSyC2BbdzLDuywvB7SDcOV6vFG4PngkNW4Vo",
 
-  authDomain: "maplestays1.firebaseapp.com",
+  authDomain: "maplestays2.firebaseapp.com",
 
-  projectId: "maplestays1",
+  projectId: "maplestays2",
 
-  storageBucket: "maplestays1.appspot.com",
+  storageBucket: "maplestays2.appspot.com",
 
-  messagingSenderId: "818069066096",
+  messagingSenderId: "613905574101",
 
-  appId: "1:818069066096:web:d64f71fdfc85adf2d8ffb5"
+  appId: "1:613905574101:web:c0e5e1ef4ac429a4a91a5c"
+
 
 };
 
