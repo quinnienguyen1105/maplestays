@@ -7,12 +7,12 @@ import { useNavigate } from 'react-router-dom';
 
 function RegistrationForm() {
     
-    const [firstName, setFirstName] = useState(null);
-    const [lastName, setLastName] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [password,setPassword] = useState(null);
-    const [confirmPassword,setConfirmPassword] = useState(null);
-    const [userType, setUserType] = useState("1"); // set the initial value to "1"
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [userType, setUserType] = useState('1'); // set the initial value to "1"
     const [validationErrors, setValidationErrors] = useState([]);
 
     const dispatch = useDispatch();
@@ -80,6 +80,7 @@ function RegistrationForm() {
     };
 
     const handleSubmit  = async () => {
+        console.log('đjdjdjd')
         const isValid = validateForm();
         if (isValid) {
             const data = {firstName, lastName, email, password, userType};

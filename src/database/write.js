@@ -9,7 +9,7 @@ export async function save(data){
       return docRef.id;
     } 
     catch(e){
-        console.log("Error adding tasks!");
+        console.log("Error adding tasks!" + e);
         return null;
     }
 

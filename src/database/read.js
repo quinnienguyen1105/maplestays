@@ -7,6 +7,8 @@ export async function getUserInfo(email, password) {
     try{
         const usersRef = collection(db, "users");
         const q = query(usersRef, where("email", "==", email), where("password", "==", password));
+        console.log("CHECK" + q);
+
         const querySnapshot = await getDocs(q);
         if (querySnapshot.empty) {
             throw new Error('No matching documents');
